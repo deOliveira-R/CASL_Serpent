@@ -1,0 +1,35 @@
+set title "Pin-cell calculation"
+
+include "../materials/common.serp"
+include "../materials/water_600-1300.serp"
+include "../materials/fuel_1200.serp"
+include "../geometry/pins.serp"
+include "../settings/libraries.serp"
+
+% Create a unit cell and fill with pin
+surf 1  sqc 0 0 0.63
+cell 1  0  fill FM  -1
+cell 2  0  outside   1
+
+set bc 3 % Periodic boundary condition
+
+% --- Neutron population and criticality cycles
+set pop 3000 500 50
+
+plot 3 500 500            % Geometry plot
+set his 1                 % History output
+set usym 1 3 2 0 0 0 45   % Set universe symmetry
+set ures 0                % Activate unresolved resonances probability tables
+set egrid 5E-5 1E-9 15.0  % Reduce energy grid size (memory demand)
+set genrate 100           % Set neutron generation rate normalization
+set gcu -1                % Skip group constant generation
+
+% --- Detectors
+ene 1 3 1000 1e-11 20          % equal lethargy-width grid of 1000 bins between 1e-11 and 20 MeV
+ene 2 1 1e-11 1e-6 0.1 20      % thermal/intermediate/fast energy grid
+
+det  1 de 1 dt -3                          % neutron flux/spectrum
+det 11 de 1 dm fuel-2619    dt -3 dv 5.3337E-01    % neutron spectrum in the fuel
+det 12 de 1 dm Zircaloy-4   dt -3 dv 1.7556E-01    % neutron spectrum in the cladding
+det 13 de 1 dm coolant      dt -3 dv 1.0600E+00    % neutron spectrum in the coolant
+det 21 de 2 dn 1 0 0.665 20 0 360 1 0 0 1  % cylindrical mesh detector for distribution

@@ -1,0 +1,179 @@
+% PINS WITH 600 K MODERATOR
+
+% Dummy water pin for using "set usym" on assembly and Guide Tubes with coolant
+pin C
+coolant
+
+% -----------------------------------------------
+% FUEL PINS -------------------------------------
+% -----------------------------------------------
+
+pin FH
+fuel-310    0.4096
+helium      0.4180
+Zircaloy-4  0.4750
+coolant
+
+pin FM
+fuel-2619   0.4096
+helium      0.4180
+Zircaloy-4  0.4750
+coolant
+
+pin FL
+fuel-211    0.4096
+helium      0.4180
+Zircaloy-4  0.4750
+coolant
+
+% SPECIAL PINS ----------------------------------
+
+% IFBA
+% coating thickness  10 microns
+
+pin FB      % fuel with Zirconium boride coating for reactivity control
+fuel-310    0.4096
+IFBA        0.4106
+helium      0.4180
+Zircaloy-4  0.4750
+coolant
+
+% GADOLINIA
+
+pin FG      % fuel with Gad and 1.8% enrichment for reactivity control
+fuel-gad    0.4096
+helium      0.4180
+Zircaloy-4  0.4750
+coolant
+
+% ZONING
+
+pin FZ      % fuel with increased enrichment for zoned fuel assembly
+fuel-360    0.4096
+helium      0.4180
+Zircaloy-4  0.4750
+coolant
+
+% FUEL PIN PLENUM AND PLUGS ---------------------
+
+% Plenum 16.0 SS spring (unknown)
+% Endplug 1.67
+% Rod Height  385.1
+% Fuel stack  365.76
+
+pin PL     % fuel plenum
+void        0.4180
+Zircaloy-4  0.4750
+coolant
+
+pin PG     % fuel plug
+Zircaloy-4  0.4750
+coolant
+
+% -----------------------------------------------
+% GUIDE TUBES -----------------------------------
+% -----------------------------------------------
+
+pin GW
+fill C      0.561
+Zircaloy-4  0.602
+coolant
+
+pin GP
+fill plug   0.561
+Zircaloy-4  0.602
+coolant
+
+pin PY
+fill PYREX  0.561
+Zircaloy-4  0.602
+coolant
+
+pin WB
+fill WABA   0.561
+Zircaloy-4  0.602
+coolant
+
+pin CA
+fill AIC    0.561
+Zircaloy-4  0.602
+coolant
+
+pin CB
+fill B4C    0.561
+Zircaloy-4  0.602
+coolant
+
+% THIMBLE PLUG ----------------------------------
+
+% Height  11.0
+% axial location  383.31
+
+pin plug
+SS-304      0.538
+coolant
+
+% BURNABLE POISON -------------------------------
+
+% PYREX
+% poison height  360.68
+% plenum height   22.2
+% axial location  15.761
+% Endplugs height  2.54
+
+pin PYREX
+helium      0.214
+SS-304      0.231
+helium      0.241
+PYREX       0.427
+helium      0.437
+SS-304      0.484
+coolant
+
+pin WABA
+coolant     0.286
+Zircaloy-4  0.339
+helium      0.353
+WABA        0.404
+helium      0.418
+Zircaloy-4  0.484
+coolant
+
+% CONTROL RODS ----------------------------------
+
+% AIC poison Height     101.6
+% B4C poison Height     259.08
+% total poison height   360.68
+% plenum height         10.7
+% axial location        17.031
+% endplug height         1.9
+% maximum number of steps 230
+
+pin AIC
+AIC         0.382
+helium      0.386
+SS-304      0.484
+coolant
+
+pin B4C
+B4C         0.373
+helium      0.386
+SS-304      0.484
+coolant
+
+% -----------------------------------------------
+% CORE INSTRUMENTATION --------------------------
+% -----------------------------------------------
+
+% Height same as IT (top nozzle)
+
+pin IT
+fill IN     0.559
+Zircaloy-4  0.605
+coolant
+
+pin IN
+void        0.258   % in-core instrumentation goes here!
+%helium      0.258   % in-core instrumentation goes here!
+SS-304      0.382
+coolant

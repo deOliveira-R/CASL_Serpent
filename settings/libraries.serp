@@ -1,0 +1,4 @@
+% CROSS-SECTION LIBRARIES -----------------------------------------------------
+
+set acelib "sss_jeff311u.xsdata"
+therm lwtr lwj3.11t       % Bound-atoms thermal scattering data for light water

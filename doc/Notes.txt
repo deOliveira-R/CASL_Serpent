@@ -1,0 +1,49 @@
+%
+% FUEL ASSEMBLY ---------------------------------
+% 17x17 Westinghouse design
+% 289 rods (264 fuel rods, 24 guide tubes, 1 intrument tube)
+% Rod pitch   1.26 cm
+% Assembly pitch  21.50 cm
+% Inter-Assembly Half Gap 0.04 cm
+
+P P P P P P P P P P P P P P P P P
+P P P P P P P P P P P P P P P P P
+P P P P P G P P G P P G P P P P P
+P P P G P P P P P P P P P G P P P
+P P P P P P P P P P P P P P P P P
+P P G P P G P P G P P G P P G P P
+P P P P P P P P P P P P P P P P P
+P P P P P P P P P P P P P P P P P
+P P G P P G P P I P P G P P G P P
+P P P P P P P P P P P P P P P P P
+P P P P P P P P P P P P P P P P P
+P P G P P G P P G P P G P P G P P
+P P P P P P P P P P P P P P P P P
+P P P G P P P P P P P P P G P P P
+P P P P P G P P G P P G P P P P P
+P P P P P P P P P P P P P P P P P
+P P P P P P P P P P P P P P P P P
+
+End grids 2 (13.884 and 388.2 in the center of the grid) Inconel-718 H 3.866 cm
+Int grids 6 (75.2, 127.4, 179.6, 231.8, 284.0 and 336.2 in the center of the grid) Zir-4 H 3.810 cm
+
+Total assembly Height   406.337
+Axial location of fuel stack    11.951
+Lower Gap Height    4.228
+Upper Shoulder Height   2.129
+Bottom nozzle   height 6.053 axial location 0
+Top nozzle      height 8.827 axial location 397.51
+
+Bottom plate    H 5.0 cm axial location -5
+Top plate       H 7.6 cm axial location 406.337
+
+% CORE VESSEL
+% Baffle  SS-304  thickness 2.85 cm   assembly and baffle gap 0.19 cm
+% Barrel  SS-304  IR 187.96 cm    OR 193.68 cm
+% Neutron Pad  SS-304 IR 194.64 cm OR 201.63 cm Arc length 32º Angular location 45º height 365.76 cm
+% Vessel  Liner SS-304 IR 219.15 cm  CS508 IR 219.71 cm OR 241.70 cm
+
+% Coolant inlet temp  565 K average temp at HFP 585 K flow rate 144.7 Mlbs/hr bypass 9%
+% Heat in fuel 97.4%
+% System pressure 2250 psi
+% Rated power 3411 MW

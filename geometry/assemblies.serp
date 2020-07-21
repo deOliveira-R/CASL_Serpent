@@ -1,0 +1,589 @@
+% ASSEMBLIES WITH 600 K MODERATOR
+
+% -----------------------------------------------
+% ASSEMBLIES ------------------------------------
+% -----------------------------------------------
+
+% Available pins:
+
+% C - Dummy coolant pin to use on for "set usym"
+
+% FH - fuel pin with 3.1% enrichment
+% FM - fuel pin with 2.619% enrichment
+% FL - fuel pin with 2.11% enrichment
+
+% FB - IFBA pin with 3.1% enrichment (FH) and ZrB2 coating
+% FG - IFBA pin with 1.8% enrichment and mixed Gadolinia
+% FZ - Fuel pin with 3.6% enrichment for Zoning
+
+% PL - Plenum of fuel pin with void inside cladding
+% PG - Plug part of the fuel pin. Basically solid Zircaloy-4
+
+% GW - water filled GT
+% GP - plugged part of water GT
+% PY - PYREX insert in GT
+% WB - WABA insert in GT
+% CA - AIC Control rod in GT
+% CB - B4C Control rod in GT
+
+% -----------------------------------------------
+% FUEL ASSEMBLIES -------------------------------
+% -----------------------------------------------
+
+% Coded as "XYY", where:
+% X is "H", "M" or "L" for High, Medium and Low enrichment
+% YY is 04, 08, 12, 16, 20 or 24 PYREX inserts
+
+% HIGH ENRICHMENT -------------------------------
+
+% Prototype reference lattice with all pins explicitly defined
+lat H00F 1 0.0 0.0 17 17 1.26
+
+FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH
+FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH
+FH FH FH FH FH GW FH FH GW FH FH GW FH FH FH FH FH
+FH FH FH GW FH FH FH FH FH FH FH FH FH GW FH FH FH
+FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH
+FH FH GW FH FH GW FH FH GW FH FH GW FH FH GW FH FH
+FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH
+FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH
+FH FH GW FH FH GW FH FH IT FH FH GW FH FH GW FH FH
+FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH
+FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH
+FH FH GW FH FH GW FH FH GW FH FH GW FH FH GW FH FH
+FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH
+FH FH FH GW FH FH FH FH FH FH FH FH FH GW FH FH FH
+FH FH FH FH FH GW FH FH GW FH FH GW FH FH FH FH FH
+FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH
+FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH FH
+
+lat H00 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH C  C  C  C  C  C
+C  C  C  C  C  C  C  C  GW FH FH GW C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH GW C  C  C
+C  C  C  C  C  C  C  C  GW FH FH GW FH FH FH C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH FH
+
+lat H04 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH C  C  C  C  C  C
+C  C  C  C  C  C  C  C  GW FH FH GW C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH PY C  C  C
+C  C  C  C  C  C  C  C  GW FH FH GW FH FH FH C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH FH
+
+lat H08 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH C  C  C  C  C  C
+C  C  C  C  C  C  C  C  PY FH FH GW C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH PY C  C  C
+C  C  C  C  C  C  C  C  GW FH FH GW FH FH FH C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH FH
+
+lat H12 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH C  C  C  C  C  C
+C  C  C  C  C  C  C  C  PY FH FH GW C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH GW C  C  C
+C  C  C  C  C  C  C  C  GW FH FH PY FH FH FH C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH FH
+
+lat H16 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH C  C  C  C  C  C
+C  C  C  C  C  C  C  C  PY FH FH GW C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH PY C  C  C
+C  C  C  C  C  C  C  C  GW FH FH PY FH FH FH C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH FH
+
+lat H20 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH C  C  C  C  C  C
+C  C  C  C  C  C  C  C  PY FH FH GW C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH PY C  C  C
+C  C  C  C  C  C  C  C  PY FH FH PY FH FH FH C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH FH
+
+lat H24 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH C  C  C  C  C  C
+C  C  C  C  C  C  C  C  PY FH FH PY C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH PY C  C  C
+C  C  C  C  C  C  C  C  PY FH FH PY FH FH FH C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH FH
+
+% MEDIUM ENRICHMENT -----------------------------
+
+lat M00 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM C  C  C  C  C  C
+C  C  C  C  C  C  C  C  GW FM FM GW C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM GW C  C  C
+C  C  C  C  C  C  C  C  GW FM FM GW FM FM FM C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM FM FM FM C
+C  C  C  C  C  C  C  C  FM FM FM FM FM FM FM FM FM
+
+
+lat M04 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM C  C  C  C  C  C
+C  C  C  C  C  C  C  C  GW FM FM GW C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM PY C  C  C
+C  C  C  C  C  C  C  C  GW FM FM GW FM FM FM C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM FM FM FM C
+C  C  C  C  C  C  C  C  FM FM FM FM FM FM FM FM FM
+
+lat M08 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM C  C  C  C  C  C
+C  C  C  C  C  C  C  C  PY FM FM GW C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM PY C  C  C
+C  C  C  C  C  C  C  C  GW FM FM GW FM FM FM C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM FM FM FM C
+C  C  C  C  C  C  C  C  FM FM FM FM FM FM FM FM FM
+
+lat M12 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM C  C  C  C  C  C
+C  C  C  C  C  C  C  C  PY FM FM GW C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM GW C  C  C
+C  C  C  C  C  C  C  C  GW FM FM PY FM FM FM C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM FM FM FM C
+C  C  C  C  C  C  C  C  FM FM FM FM FM FM FM FM FM
+
+lat M16 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM C  C  C  C  C  C
+C  C  C  C  C  C  C  C  PY FM FM GW C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM PY C  C  C
+C  C  C  C  C  C  C  C  GW FM FM PY FM FM FM C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM FM FM FM C
+C  C  C  C  C  C  C  C  FM FM FM FM FM FM FM FM FM
+
+lat M20 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM C  C  C  C  C  C
+C  C  C  C  C  C  C  C  PY FM FM GW C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM PY C  C  C
+C  C  C  C  C  C  C  C  PY FM FM PY FM FM FM C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM FM FM FM C
+C  C  C  C  C  C  C  C  FM FM FM FM FM FM FM FM FM
+
+lat M24 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM C  C  C  C  C  C
+C  C  C  C  C  C  C  C  PY FM FM PY C  C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM C  C  C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM PY C  C  C
+C  C  C  C  C  C  C  C  PY FM FM PY FM FM FM C  C
+C  C  C  C  C  C  C  C  FM FM FM FM FM FM FM FM C
+C  C  C  C  C  C  C  C  FM FM FM FM FM FM FM FM FM
+
+% LOW ENRICHMENT --------------------------------
+
+lat L00 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FL FL C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FL FL FL C  C  C  C  C  C
+C  C  C  C  C  C  C  C  GW FL FL GW C  C  C  C  C
+C  C  C  C  C  C  C  C  FL FL FL FL FL C  C  C  C
+C  C  C  C  C  C  C  C  FL FL FL FL FL GW C  C  C
+C  C  C  C  C  C  C  C  GW FL FL GW FL FL FL C  C
+C  C  C  C  C  C  C  C  FL FL FL FL FL FL FL FL C
+C  C  C  C  C  C  C  C  FL FL FL FL FL FL FL FL FL
+
+% IFBA ZrB2 -------------------------------------
+
+% With water in guide tubes
+
+lat B048 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FB FH C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH C  C  C  C  C  C
+C  C  C  C  C  C  C  C  GW FB FH GW C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH FB FH C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FB GW C  C  C
+C  C  C  C  C  C  C  C  GW FB FH GW FB FH FH C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH FB
+
+lat B080 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FB FH C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FB C  C  C  C  C  C
+C  C  C  C  C  C  C  C  GW FB FH GW C  C  C  C  C
+C  C  C  C  C  C  C  C  FB FH FH FB FH C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH FB FB GW C  C  C
+C  C  C  C  C  C  C  C  GW FB FH GW FB FH FB C  C
+C  C  C  C  C  C  C  C  FB FH FH FB FH FH FH FH C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH FB
+
+lat B104 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FB FH C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FB FH FH C  C  C  C  C  C
+C  C  C  C  C  C  C  C  GW FB FB GW C  C  C  C  C
+C  C  C  C  C  C  C  C  FB FH FH FB FH C  C  C  C
+C  C  C  C  C  C  C  C  FB FH FH FB FB GW C  C  C
+C  C  C  C  C  C  C  C  GW FB FB GW FB FB FH C  C
+C  C  C  C  C  C  C  C  FB FH FH FB FH FH FH FH C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH FB
+
+lat B128 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FB FH C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FB FH FH C  C  C  C  C  C
+C  C  C  C  C  C  C  C  GW FB FB GW C  C  C  C  C
+C  C  C  C  C  C  C  C  FB FH FH FB FH C  C  C  C
+C  C  C  C  C  C  C  C  FB FH FH FB FB GW C  C  C
+C  C  C  C  C  C  C  C  GW FB FB GW FB FB FH C  C
+C  C  C  C  C  C  C  C  FB FH FH FB FH FH FB FH C
+C  C  C  C  C  C  C  C  FH FB FH FH FB FH FH FH FB
+
+% IFBA Gadolinia -------------------------------------
+
+% With water in guide tubes
+
+lat G12 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH C  C  C  C  C  C
+C  C  C  C  C  C  C  C  GW FH FH GW C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FG FH FH C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH GW C  C  C
+C  C  C  C  C  C  C  C  GW FH FH GW FH FH FG C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH FH
+
+lat G24 1 0.0 0.0 17 17 1.26
+
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  IT C  C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH C  C  C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FG C  C  C  C  C  C
+C  C  C  C  C  C  C  C  GW FH FH GW C  C  C  C  C
+C  C  C  C  C  C  C  C  FH FH FH FH FG C  C  C  C
+C  C  C  C  C  C  C  C  FG FH FH FH FH GW C  C  C
+C  C  C  C  C  C  C  C  GW FH FH GW FH FH FG C  C
+C  C  C  C  C  C  C  C  FH FH FH FG FH FH FH FH C
+C  C  C  C  C  C  C  C  FH FH FH FH FH FH FH FH FH
+
+% APPLY SYMMETRY TO LATTICES --------------------
+
+set usym H00 3 2 0.0 0.0 45 45
+set usym H04 3 2 0.0 0.0 45 45
+set usym H08 3 2 0.0 0.0 45 45
+set usym H12 3 2 0.0 0.0 45 45
+set usym H16 3 2 0.0 0.0 45 45
+set usym H20 3 2 0.0 0.0 45 45
+set usym H24 3 2 0.0 0.0 45 45
+
+set usym M00 3 2 0.0 0.0 45 45
+set usym M04 3 2 0.0 0.0 45 45
+set usym M08 3 2 0.0 0.0 45 45
+set usym M12 3 2 0.0 0.0 45 45
+set usym M16 3 2 0.0 0.0 45 45
+set usym M20 3 2 0.0 0.0 45 45
+set usym M24 3 2 0.0 0.0 45 45
+
+set usym L00 3 2 0.0 0.0 45 45
+
+set usym B048 3 2 0.0 0.0 45 45
+set usym B080 3 2 0.0 0.0 45 45
+set usym B104 3 2 0.0 0.0 45 45
+set usym B128 3 2 0.0 0.0 45 45
+
+set usym G12 3 2 0.0 0.0 45 45
+set usym G24 3 2 0.0 0.0 45 45
+
+% -----------------------------------------------
+% ASSEMBLIES WITH PITCH -------------------------
+% -----------------------------------------------
+
+% Create 2 square surfaces, one to fit the assembly exactly
+% and another for half-pitch
+
+surf AS  sqc 0 0 10.71  % assembly
+surf AP  sqc 0 0 10.75  % assembly with half-pitch
+
+cell H000   H1  fill H00       -AS
+cell H001   H1  coolant     AS -AP
+cell H002   H1  outside     AP
+
+cell H040   H2  fill H04       -AS
+cell H041   H2  coolant     AS -AP
+cell H042   H2  outside     AP
+
+cell H080   H3  fill H08       -AS
+cell H081   H3  coolant     AS -AP
+cell H082   H3  outside     AP
+
+cell H120   H4  fill H12       -AS
+cell H121   H4  coolant     AS -AP
+cell H122   H4  outside     AP
+
+cell H160   H5  fill H16       -AS
+cell H161   H5  coolant     AS -AP
+cell H162   H5  outside     AP
+
+cell H200   H6  fill H16       -AS
+cell H201   H6  coolant     AS -AP
+cell H202   H6  outside     AP
+
+cell H240   H7  fill H24       -AS
+cell H241   H7  coolant     AS -AP
+cell H242   H7  outside     AP
+
+cell M000   M1  fill M00       -AS
+cell M001   M1  coolant     AS -AP
+cell M002   M1  outside     AP
+
+cell M040   M2  fill M04       -AS
+cell M041   M2  coolant     AS -AP
+cell M042   M2  outside     AP
+
+cell M080   M3  fill M08       -AS
+cell M081   M3  coolant     AS -AP
+cell M082   M3  outside     AP
+
+cell M120   M4  fill M12       -AS
+cell M121   M4  coolant     AS -AP
+cell M122   M4  outside     AP
+
+cell M160   M5  fill M16       -AS
+cell M161   M5  coolant     AS -AP
+cell M162   M5  outside     AP
+
+cell M200   M6  fill M20       -AS
+cell M201   M6  coolant     AS -AP
+cell M202   M6  outside     AP
+
+cell M240   M7  fill M24       -AS
+cell M241   M7  coolant     AS -AP
+cell M242   M7  outside     AP
+
+cell L000   L1  fill L00       -AS
+cell L001   L1  coolant     AS -AP
+cell L002   L1  outside     AP
