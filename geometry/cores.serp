@@ -53,5 +53,5 @@ cell R3 REA  SS-304       DOW -LIN
 cell R4 REA  CS508        LIN -VES
 cell R5 REA  outside      VES
 
-%set usym 12 3 2 0.0 0.0 0 90
-set usym 12 3 2 0.0 0.0 270 90
+%set usym REA 3 2 0.0 0.0 0 90
+set usym REA 3 2 0.0 0.0 270 90

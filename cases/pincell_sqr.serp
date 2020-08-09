@@ -14,22 +14,39 @@ cell 2  0  outside   1
 set bc 3 % Periodic boundary condition
 
 % --- Neutron population and criticality cycles
-set pop 3000 500 50
+set pop 500 200 50
 
-plot 3 500 500            % Geometry plot
-set his 1                 % History output
-set usym 1 3 2 0 0 0 45   % Set universe symmetry
-set ures 0                % Activate unresolved resonances probability tables
-set egrid 5E-5 1E-9 15.0  % Reduce energy grid size (memory demand)
-set genrate 100           % Set neutron generation rate normalization
-set gcu -1                % Skip group constant generation
+plot 3 500 500              % Geometry plot
+set his 1                   % History output
+set ures 0                  % Activate unresolved resonances probability tables
+set egrid 5E-5 1E-9 15.0    % Reduce energy grid size (memory demand)
+set genrate 100             % Set neutron generation rate normalization
+set gcu -1                  % Skip group constant generation
 
 % --- Detectors
-ene 1 3 1000 1e-11 20          % equal lethargy-width grid of 1000 bins between 1e-11 and 20 MeV
-ene 2 1 1e-11 1e-6 0.1 20      % thermal/intermediate/fast energy grid
+ene 1 3 1000 1e-11 20       % equal lethargy-width grid of 1000 bins between 1e-11 and 20 MeV
+ene 2 1 1e-11 1e-6 0.1 20   % thermal/intermediate/fast energy grid
+ene CAS70 4 cas70           % 70 groups energy mesh from CASMO
+ene CAS2  4 cas2            % 2 groups energy mesh from CASMO
 
-det  1 de 1 dt -3                          % neutron flux/spectrum
-det 11 de 1 dm fuel-2619    dt -3 dv 5.3337E-01    % neutron spectrum in the fuel
-det 12 de 1 dm Zircaloy-4   dt -3 dv 1.7556E-01    % neutron spectrum in the cladding
-det 13 de 1 dm coolant      dt -3 dv 1.0600E+00    % neutron spectrum in the coolant
-det 21 de 2 dn 1 0 0.665 20 0 360 1 0 0 1  % cylindrical mesh detector for distribution
+det spec     de 1 dt -3                                 % neutron flux/spectrum
+det specFuel de 1 dt -3 dm fuel-2619  dv 5.3337E-01     % neutron spectrum in the fuel
+det specClad de 1 dt -3 dm Zircaloy-4 dv 1.7556E-01     % neutron spectrum in the cladding
+det specCool de 1 dt -3 dm coolant    dv 1.0600E+00     % neutron spectrum in the coolant
+det dist     de 2 dn 1 0 0.665 20 0 360 1 0 0 1         % cylindrical mesh detector for distribution
+
+% Total flux in material "fuel-2619":
+
+det flux70 de CAS70 dm fuel-2619
+det flux2  de CAS2  dm fuel-2619
+
+% Detector materials:
+
+mat U235 1.0 92235.03c 1.0
+mat U238 1.0 92238.03c 1.0
+
+% Calculate microscopic fission and capture cross sections of
+% U-235 and U-238 by dividing the reaction rate by total flux:
+
+det U235micro70 dm fuel-2619 de CAS70 dr 18 U235 dt 3 flux70
+det U235micro2  dm fuel-2619 de CAS2  dr 18 U235 dt 3 flux2
